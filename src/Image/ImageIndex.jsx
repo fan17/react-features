@@ -6,19 +6,16 @@ const Image = props => (
         <div>
             <div>
                 x:
-                <span>
-                    {props.mouse.x}
-                </span>
+                {props.mouse.x}
+            </div>
+            <div>
                 y:
-                <span>
-                    {props.mouse.y}
-                </span>
+                {props.mouse.y}
             </div>
         </div>
         <img src={props.src} alt="sample" />
     </div>
 );
-
 
 Image.propTypes = {
     mouse: PropTypes.shape({
