@@ -1,5 +1,5 @@
 {
-    "extends": "airbnb",
+    "extends": ["airbnb", "prettier"],
     "env": {
         "browser": true,
         "node": true,
@@ -13,17 +13,25 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "react",
-        "jsx",
-        "jsx-a11y"
-    ],
+    "plugins": ["react", "jsx", "jsx-a11y", "prettier"],
     "rules": {
         "indent": ["error", 4],
         "react/jsx-indent": ["error", 4],
         "react/jsx-indent-props": ["error", 4],
         "prefer-destructuring": "off",
         "react/destructuring-assignment": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline",
+                "imports": "always-multiline",
+                "exports": "always-multiline",
+                "functions": "never"
+            }
+        ],
+        "prettier/prettier": ["error"],
+        "react/jsx-one-expression-per-line": "off"
     }
 }

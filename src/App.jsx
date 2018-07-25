@@ -10,18 +10,12 @@ const App = () => (
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <h1 className="App-title">
-                    React features
-                </h1>
+                <h1 className="App-title">React features</h1>
             </header>
             <nav>
-                <Link to="/render-props">
-                    RenderProps
-                </Link>
+                <Link to="/render-props">RenderProps</Link>
                 &nbsp;|&nbsp;
-                <Link to="/hoc">
-                    Hoc
-                </Link>
+                <Link to="/hoc">Hoc</Link>
             </nav>
             <div>
                 <Route exact path="/render-props" component={RenderProps} />
@@ -30,6 +24,5 @@ const App = () => (
         </div>
     </BrowserRouter>
 );
-
 
 export default App;
